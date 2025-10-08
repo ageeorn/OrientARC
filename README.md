@@ -1,6 +1,6 @@
 <img width=100% alt="image showing the web app" src="https://github.com/user-attachments/assets/3d25b347-c932-4ad8-81b4-594a4853dcd2" />
 
-# Artefact Recommender App
+# OrientARC
 
 This is a simple web app that helps you "identify" and learn about museum artifacts. You can use your camera or upload a photo, and the app will show you information about the artifact and suggest similar items. This project is a demo, so the "AI" is just a simulation using example data.
 
