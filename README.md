@@ -1,10 +1,4 @@
-
-# Artefact Recommender App
-
-<!--
-README.md: Project overview and instructions.
-Contains information about the app, setup, and usage for new users and developers.
--->
+<img width=100% alt="image showing the web app" src="https://github.com/user-attachments/assets/3d25b347-c932-4ad8-81b4-594a4853dcd2" />
 
 # Artefact Recommender App
 
