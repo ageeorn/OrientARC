@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Progress } from './ui/progress';
 import { ArtifactCard } from './ArtifactCard';
-import { ScanResult as ScanResultType } from '../types/artefact';
+import { ScanResult as ScanResultType } from '../types/artifact';
 
 interface ScanResultProps {
   result: ScanResultType;
@@ -14,7 +14,7 @@ interface ScanResultProps {
 }
 
 export function ScanResult({ result, onBack, onArtifactSelect }: ScanResultProps) {
-  const { artefact, confidence, recommendedArtifacts } = result;
+  const { artifact, confidence, recommendedArtifacts } = result;
 
   return (
     <div className="space-y-6">
@@ -45,15 +45,15 @@ export function ScanResult({ result, onBack, onArtifactSelect }: ScanResultProps
         </CardHeader>
         <CardContent>
           <ArtifactCard 
-            artefact={artefact} 
+            artifact={artifact} 
             showFullDetails={true}
-            onClick={() => onArtifactSelect(artefact.id)}
+            onClick={() => onArtifactSelect(artifact.id)}
           />
           
           <div className="mt-4 p-4 bg-muted/50 rounded-lg">
             <h4 className="mb-2">Cultural Significance</h4>
             <p className="text-sm text-muted-foreground">
-              {artefact.significance}
+              {artifact.significance}
             </p>
           </div>
         </CardContent>
@@ -72,7 +72,7 @@ export function ScanResult({ result, onBack, onArtifactSelect }: ScanResultProps
             {recommendedArtifacts.map((recommendedArtifact) => (
               <ArtifactCard
                 key={recommendedArtifact.id}
-                artefact={recommendedArtifact}
+                artifact={recommendedArtifact}
                 onClick={() => onArtifactSelect(recommendedArtifact.id)}
               />
             ))}
